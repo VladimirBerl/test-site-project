@@ -13,6 +13,7 @@
   --text-inverted-color: #26325c;
   --text-secondary-color: #7f91a4;
   --text-tertiary-color: #7f91a4;
+  --background-icon: #4a5867;
   --backdrop-color: rgba(23, 33, 43, 0.75);
   --title-color: #fff;
   --line-color: #2c3743;
@@ -36,6 +37,7 @@
 html,
 body {
   overflow: hidden;
+  overflow-y: auto;
 }
 body {
   font-family: "Stem", sans-serif;
@@ -152,9 +154,90 @@ header {
   font-size: 2.5vw;
 }
 /* hero end */
+/* advantages */
+.advantages {
+  margin-bottom: 30px;
+}
+.advantages-wrapper {
+  display: flex;
+  align-items: start;
+  justify-content: space-around;
+  /* flex-wrap: wrap; */
+  gap: 20px;
+}
+.advantages-item {
+  display: flex;
+  flex-direction: column;
+  min-height: 200px;
+  width: 100%;
+  padding: 24px;
+  background-color: var(--line-color);
+  border-radius: var(--border-radius);
+}
+.advantages-item-icon {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+
+  width: 48px;
+  height: 48px;
+  margin-bottom: 16px;
+  border-radius: 50%;
+  background-color: var(--background-icon);
+}
+.advantages-item-icon i {
+  font-size: 22px;
+}
+.advantages-item-title {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+.advantages-item-desc {
+  font-size: 13px;
+  color: var(--text-secondary-color);
+}
+/* advantages end */
+/* about */
+.about {
+  margin-bottom: 30px;
+}
+.about-wrapper {
+  display: flex;
+  align-items: start;
+  gap: 20px;
+}
+.about-img {
+  max-width: 50%;
+  max-height: 400px;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+.about-info {
+}
+.about-title {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+.about-desc {
+  color: var(--text-secondary-color);
+  margin-bottom: 16px;
+}
+/* about end */
 /* main end */
 
 /* media */
+@media screen and (max-width: 920px) {
+  .advantages-wrapper {
+    flex-wrap: wrap;
+  }
+  .hero-wrapper {
+    align-items: center;
+  }
+  .hero-title {
+    text-align: center;
+  }
+}
 @media screen and (max-width: 600px) {
   .navbar-toggle {
     opacity: 1;
@@ -171,7 +254,6 @@ header {
     height: 100vh;
     z-index: 98;
     border-left: 2px solid var(--main-color);
-    /* box-shadow: 1px 1px 1px 1px red; */
     background-color: var(--line-color);
     border-top-left-radius: var(--border-radius);
     border-bottom-left-radius: var(--border-radius);
@@ -188,6 +270,18 @@ header {
   }
   .navbar-nav {
     flex-direction: column;
+  }
+  .about-wrapper {
+    flex-direction: column;
+  }
+  .about-img {
+    max-width: 100%;
+    max-height: 200px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .hero {
+    height: 300px;
   }
 }
 /* media end */
