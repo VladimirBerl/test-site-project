@@ -147,6 +147,7 @@ html.hidden {
 /* main */
 /* hero */
 .hero {
+  margin-top: 60px;
   position: relative;
 }
 .hero-wrapper {
