@@ -216,22 +216,31 @@
             <div class="contact-form-info">
               <div class="contact-form-desc">
                 Если вы ищете надежного и профессионального поставщика
-                металлических изделия и конструкций, то вы обратились по адресу! Свяжитесь с нами
-                сегодня, и мы с радостью ответим на все ваши вопросы и
-                предоставим вам лучшие условия сотрудничества.
+                металлических изделия и конструкций, то вы обратились по адресу!
+                Свяжитесь с нами сегодня, и мы с радостью ответим на все ваши
+                вопросы и предоставим вам лучшие условия сотрудничества.
               </div>
               <form class="form" action="form-messeng">
                 <label for="name" class="contact-form-label"
                   >Имя
-                  <input type="text" placeholder="Ваше имя" />
+                  <div class="input">
+                    <input type="text" placeholder="Ваше имя" />
+                    <i class="bi bi-person"></i>
+                  </div>
                 </label>
                 <label for="name" class="contact-form-label"
                   >Телефон
-                  <input type="tel" placeholder="Ваш телефон" />
+                  <div class="input">
+                    <input type="tel" placeholder="Ваш телефон" />
+                    <i class="bi bi-telephone"></i>
+                  </div>
                 </label>
                 <label for="name" class="contact-form-label"
                   >Сообщение
-                  <input type="text" placeholder="Ваше сообщение" />
+                  <div class="input">
+                    <input type="text" placeholder="Ваше сообщение" />
+                    <i class="bi bi-chat-dots"></i>
+                  </div>
                 </label>
                 <button type="button" class="btn form-btn">Отправить</button>
               </form>
@@ -240,8 +249,52 @@
         </div>
       </section>
     </main>
-    <footer>
-      
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-wrapper">
+          <div class="contact-footer">
+            <h4 class="contact-footer-title">Дополнительная свзяь</h4>
+            <address class="address">
+              <div class="address-item">
+                <i class="bi bi-map"></i>
+                <span class="address-item-name">По адресу:</span>
+                <span class="address-item-target"
+                  >Краснодарский край, г.о. Город Краснодар, г Краснодар, ул Им.
+                  Валерия Гассия, дом 4/7, корпус 1, помещение 72</span
+                >
+              </div>
+              <div class="address-item">
+                <i class="bi bi-envelope"></i>
+                <span class="address-item-name">По эл. почте:</span>
+                <a class="address-item-target" href="mailto:office.pegas@bk.ru"
+                  >office.pegas@bk.ru</a
+                >
+              </div>
+              <div class="address-item">
+                <i class="bi bi-phone"></i>
+                <span class="address-item-name">По телефону:</span>
+                <a class="address-item-target" href="tel:+79699669795"
+                  >+7(969)966-97-95</a
+                >
+              </div>
+            </address>
+          </div>
+          <div class="contact-map">
+            <h4 class="contact-footer-title">Мы на карте</h4>
+            <iframe
+              class="map"
+              src="https://yandex.ru/map-widget/v1/?um=constructor%3A56bbde741f7e01dbc870b4c193dfe574c134ba82883a145dd69fef8cd6860815&amp;source=constructor"
+              width="100%"
+              height="200"
+              frameborder="0"
+            ></iframe>
+          </div>
+          <div class="copy">
+            <i class="bi bi-c-circle"></i>
+            <h3>Все права защищены</h3>
+          </div>
+        </div>
+      </div>
     </footer>
   </body>
 
