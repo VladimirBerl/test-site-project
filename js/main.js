@@ -67,7 +67,7 @@ const swiper = new Swiper(".swiper", {
     delay: 5000,
   },
   pagination: {
-    el: '.swiper-pagination',
+    el: ".swiper-pagination",
   },
   slidesPerView: 1,
   breakpoints: {
