@@ -55,7 +55,6 @@ html.hidden {
   padding: 0 15px;
   margin: 0 auto;
 }
-
 .btn {
   text-align: center;
   max-width: 320px;
@@ -90,6 +89,9 @@ input:active,
 input:focus,
 input:hover {
   border: 1px solid var(--main-color);
+}
+input::placeholder {
+  color: var(--text-secondary-color);
 }
 /* hero fons*/
 #particles-js {
@@ -127,9 +129,7 @@ input:hover {
 .navbar-logo {
   font-size: 16px;
   text-transform: uppercase;
-  span {
-    color: var(--main-color);
-  }
+  color: var(--main-color);
 }
 .navbar-nav {
   display: flex;
@@ -323,8 +323,6 @@ input:hover {
 }
 /* services end */
 /* contact-form */
-.contact-form-wrapper {
-}
 .contact-form-title {
   font-size: 24px;
   margin-bottom: 16px;
@@ -338,6 +336,7 @@ input:hover {
 }
 .contact-form-desc {
   width: 50%;
+  color: var(--text-secondary-color);
 }
 .form {
   display: flex;
@@ -348,14 +347,11 @@ input:hover {
 .contact-form-label input {
   margin-top: 10px;
 }
-label::placeholder {
-  font-size: 30px;
-  color: var(--text-secondary-color);
-}
 .form-btn {
   min-width: 300px;
   width: 100%;
   margin: 0 auto;
+  font-size: 16px;
 }
 /* contact-form end */
 /* main end */
